@@ -3,7 +3,7 @@
 در دنیای زیرساخت (Infrastructure)، وقتی می‌خواهیم یک سرویس یا نرم‌افزار را اجرا کنیم، باید روی یک محیط پردازشی قرار بگیرد. این محیط می‌تواند **سخت‌افزار واقعی (Bare Metal)** باشد یا یک **محیط مجازی‌شده (Virtual Machine)**.
 
 <p align="center">
-	<img src="00-images/baremetal-vm.png" alt="" width=500>
+	<img src="00-images/baremetal-vm.png" alt="" width=800>
 </p>
 
 ---
