@@ -1,6 +1,6 @@
 ## تفاوت hyper visor and virtual machine
 <p align="center">
-	<img src="00-images/" alt="hvisor-vs-vm" width=100>
+	<img src="00-images/hvisor-vs-vm.png" alt="hvisor-vs-vm" width=1000>
 </p>
 
 
