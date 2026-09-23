@@ -4,6 +4,8 @@
 <p align="center">
 	<img src="00-images/dockerimageandcontainer.png" alt="" width=1000>
 </p>
+
+
 ا-**Docker Image** رو مثل یک «قالب آماده» در نظر بگیر. یعنی داخلش همه چیزهایی که برنامه برای اجرا لازم داره مشخص شده: کد برنامه، کتابخانه‌ها، dependencyها، runtime و تنظیمات لازم. خود Image اجرا نمی‌شود؛ فقط یک الگوست.
 
 مثلاً فرض کن یک Image برای Nginx داری:
