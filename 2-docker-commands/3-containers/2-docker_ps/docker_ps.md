@@ -2,9 +2,13 @@
 
 ---
 
+
+
 <p>
-	<img src="../../dockerps.png" alt="v" width=1000>
+	<img src="../../00-images/dockerps.png" alt="v" width=1000>
 </p>
+
+
 
 دستور `docker ps` یکی از اولین دستورهای مهم Docker است و برای **دیدن کانتینرهای در حال اجرا** استفاده می‌شود.
 
