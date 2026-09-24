@@ -4,6 +4,8 @@
 <p align="center">
 	<img src="../00-images/dockersearch.png" alt="" width=1000>
 </p>
+
+
   قبل شروع این رو توجه کنید:
   - زدن docker search دارید درون docker hub میگردید و اون image مدنظرتون رو میبینید
   - و با docker pull اون image  رو میارید به رپو محلیتون
