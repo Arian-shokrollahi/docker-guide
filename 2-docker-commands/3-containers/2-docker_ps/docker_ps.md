@@ -5,7 +5,7 @@
 
 
 <p>
-	<img src="../../00-images/dockerps.png" alt="v" width=1000>
+	<img src="../../00-images/dockerps1.png" alt="v" width=1000>
 </p>
 
 
