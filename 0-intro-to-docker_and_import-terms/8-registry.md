@@ -4,7 +4,7 @@
 ---
 
 <p>
-	<img src="../00-images/registry.png" alt="v" width=1000>
+	<img src="00-images/registry.png" alt="v" width=1000>
 </p>
 
 خیلی ساده، **Registry در Docker جاییه که Docker Imageها ذخیره و توزیع می‌شن.**
@@ -134,5 +134,5 @@ Container
 ## حالا به طور پیش فرض از وقتی docker pull  میزنیم از کجا دانلود میشه از کدوم ریجستری
 
 <p>
-	<img src="../00-images/registry1.png" alt="v" width=1000>
+	<img src="00-images/registry1.png" alt="v" width=1000>
 </p>
