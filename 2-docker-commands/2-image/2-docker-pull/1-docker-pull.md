@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-	<img src="../00-images/dockerpull.png" alt="" width=1000>
+	<img src="../../00-images/dockerpull.png" alt="" width=1000>
 </p>
 
 حتماً. مرتبط با همین عکس، `docker pull` این کار رو انجام می‌ده:
