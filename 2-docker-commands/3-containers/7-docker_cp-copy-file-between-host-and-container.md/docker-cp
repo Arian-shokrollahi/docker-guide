@@ -1,0 +1,75 @@
+## ا-`docker cp` چیست؟
+
+برای **کپی کردن فایل یا پوشه بین Host و Container** استفاده می‌شود.
+
+یعنی:
+
+```text
+Host  ⇄  Container
+```
+
+---
+
+## ساختار:
+
+### Host → Container
+
+```bash
+docker cp SOURCE_PATH CONTAINER:DEST_PATH
+```
+
+مثال:
+
+```bash
+docker cp index.html web:/usr/share/nginx/html/
+```
+
+یعنی فایل `index.html` را داخل Container به نام `web` کپی کن.
+
+---
+
+### Container → Host
+
+```bash
+docker cp CONTAINER:SOURCE_PATH DEST_PATH
+```
+
+مثال:
+
+```bash
+docker cp web:/etc/nginx/nginx.conf .
+```
+
+یعنی فایل کانفیگ را از Container بیرون بیاور.
+
+---
+
+## کاربردها:
+
+✅ اضافه کردن فایل سریع به Container  
+✅ گرفتن فایل از داخل Container برای بررسی  
+✅ Debug و تست  
+✅ انتقال Config یا فایل موقت
+
+---
+
+## نکات مهم:
+
+- ا-`docker cp` فایل را **داخل فایل‌سیستم Container** کپی می‌کند.
+    
+- اگر Container حذف شود، فایل‌های کپی‌شده هم از بین می‌روند.
+    
+- برای Production معمولاً بهتر است از:
+    
+    - `Dockerfile + COPY`
+        
+    - `Volume`
+        
+
+استفاده شود.
+
+خلاصه:
+
+```text
+docker cp = انتقال فایل بین سیستم و Container
+```
