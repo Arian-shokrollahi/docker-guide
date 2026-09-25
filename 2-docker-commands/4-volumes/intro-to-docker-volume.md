@@ -1,7 +1,7 @@
 # ا-Docker Volume چیست؟
 
 <p align="center">
-	<img src="00-images/introvolume.png" alt="" width=1000>
+	<img src="../00-images/introvolume.png" alt="" width=1000>
 </p>
 
 
