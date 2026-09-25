@@ -35,3 +35,9 @@ a8ecf3e15c48   nginx:latest   "/docker-entrypoint.…"   9 minutes ago   Exited 
 root@alfamachine:~# 
 
 ```
+
+---
+#  مدل  kill  ماله خوده داکر 
+```bash
+docker kill containername or id
+```
