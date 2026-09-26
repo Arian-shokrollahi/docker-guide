@@ -45,6 +45,6 @@ Mode:       Background
 ## حالا از کجا میتونیم بفهمیم درست کار کرده
 
 <p align="center">
-	<img src="00-images/testmountcontainertovolume.png.png" alt="" width=1000>
+	<img src="00-images/testmountcontainertovolume.png" alt="" width=1000>
 </p>
 
