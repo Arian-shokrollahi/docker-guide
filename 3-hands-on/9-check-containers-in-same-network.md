@@ -13,7 +13,7 @@
 - در پایان هم باید ثابت کنی هر دو داخل `app-net` هستند
 
 ```bash
-# 1) ساخت Network
+# 1) bساخت Network
 docker network create app-net
 
 # 2) ساخت PostgreSQL داخل Network
