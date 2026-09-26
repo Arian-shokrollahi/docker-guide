@@ -25,7 +25,7 @@
 ا-Docker خودش Volume را مدیریت می‌کند.
 
 ```bash
-# ساخت Volume
+# create Volume
 docker volume create mydata
 
 # اتصال Volume به Container با -v
@@ -70,7 +70,7 @@ docker run -d \
 اینجا به جای Volume، یک **مسیر واقعی از Host** را مستقیم به Container وصل می‌کنی.
 
 ```bash
-# اتصال یک پوشه Host به Container
+#k اتصال یک پوشه Host به Container
 docker run -d \
   --name web \
   -v /home/ali/project:/usr/share/nginx/html \
@@ -111,7 +111,7 @@ docker run -d \
 داده فقط داخل RAM نگهداری می‌شود.
 
 ```bash
-# ساخت tmpfs mount
+#k ساخت tmpfs mount
 docker run -d \
   --name app \
   --tmpfs /app/temp \
