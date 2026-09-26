@@ -48,3 +48,76 @@ Mode:       Background
 	<img src="00-images/testmountcontainertovolume.png" alt="" width=1000>
 </p>
 
+#### دلیل رمز دادن به mysql container
+
+برای MySQL Container معمولاً باید موقع اولین راه‌اندازی مشخص کنی با حساب `root` چه‌کار کند. به همین دلیل ما این را می‌گذاریم:
+
+```
+-e MYSQL_ROOT_PASSWORD=123456
+```
+
+یعنی برای کاربر `root` در MySQL پسورد تعیین کن.
+
+اگر هیچ‌کدام از گزینه‌های مربوط به پسورد را ندهی، Image رسمی MySQL معمولاً بالا نمی‌آید و خطایی شبیه این می‌دهد:
+
+```
+Database is uninitialized and password option is not specified
+```
+
+اما الزاماً مجبور نیستی حتماً همین مدل پسورد را بدهی. معمولاً یکی از این سه حالت را باید مشخص کنی:
+
+```
+# حالت پیشنهادی: پسورد مشخص
+-e MYSQL_ROOT_PASSWORD=StrongPassword
+
+# اجازه پسورد خالی
+-e MYSQL_ALLOW_EMPTY_PASSWORD=yes
+
+# تولید پسورد تصادفی
+-e MYSQL_RANDOM_ROOT_PASSWORD=yes
+```
+
+برای یادگیری و کار واقعی، بهترین حالت همان `MYSQL_ROOT_PASSWORD` است.
+
+نکته امنیتی: `123456` فقط برای تمرین خوب است؛ برای محیط واقعی پسورد قوی استفاده کن و بهتر است پسورد را مستقیم داخل command history نگذاری.
+
+---
+
+### و ما برایه مونت کردن دو مدل داریم که اینم بهتون بگم
+
+ برای Mount کردن Volume این دو مدل است:
+
+```
+-v mysql-data:/var/lib/mysql
+```
+
+و:
+
+```
+--mount source=mysql-data,target=/var/lib/mysql
+```
+
+مدل **`--mount` جدیدتر، خواناتر و برای کار حرفه‌ای بهتر** است.
+
+مثلاً:
+
+```
+docker run -d \
+  --name mysql-db \
+  --mount source=mysql-data,target=/var/lib/mysql \
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  mysql
+```
+
+در مقابل، `-v` قدیمی‌تر و کوتاه‌تر است:
+
+```
+docker run -d \
+  --name mysql-db \
+  -v mysql-data:/var/lib/mysql \
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  mysql
+```
+
+هر دو کار می‌کنند. برای یادگیری Docker حتماً هر دو را بلد باش، ولی برای اسکریپت‌ها و کارهای Production من `--mount` را ترجیح می‌دهم چون واضح‌تر است و احتمال اشتباه کمتر می‌شود.
+
