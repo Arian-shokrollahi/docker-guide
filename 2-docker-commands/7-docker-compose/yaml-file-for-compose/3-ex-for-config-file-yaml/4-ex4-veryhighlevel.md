@@ -261,5 +261,5 @@ networks:
 
 
 <p align="center">
-	<img src="../../../00-images/dockerveryhighlevelcompose.png" alt="" width=1000>
+	<img src="../../../00-images/dockerhighlevelconfigyamlex.png" alt="" width=1000>
 </p>
