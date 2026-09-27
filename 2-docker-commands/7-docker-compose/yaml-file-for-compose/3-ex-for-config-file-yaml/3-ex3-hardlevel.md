@@ -144,9 +144,18 @@
 ```
 
 #### کد هایه این سناریو و کارهایی که باید بکنی
-- کارهایی که باید بکنی و پیش نیاز ها:
-- ۱-ساخت شبکه docker network create frontend backend
-- ۲-ساخت ولوم docker volume create db-data
+اگر `networks:` و `volumes:` رو داخل خود `compose.yaml` تعریف کرده باشی، معمولاً لازم نیست دستی بسازیشون؛ Compose خودش می‌سازه.
+
+مثلاً این‌ها:
+
+```
+docker network create frontend-net
+docker network create backend-net
+
+docker volume create db-data
+```
+
+فقط وقتی لازم می‌شن که بخوای Network یا Volume رو **خارج از Compose و از قبل** بسازی، یا به شکل external استفاده کنی.
 
 ```
 services:
