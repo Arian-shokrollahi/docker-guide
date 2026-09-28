@@ -41,3 +41,38 @@ root@alfamachine:~#
 ```bash
 docker kill containername or id
 ```
+## یه روش دیگه برایه متوقف کردن کانتینر با command substitution
+--- 
+این بخش:
+
+```
+$(docker inspect -f '{{.State.Pid}}' folan)
+```
+
+اسمش **Command Substitution** هست.
+
+یعنی Bash اول دستور داخل `$(...)` رو اجرا می‌کنه، خروجی اون رو برمی‌داره و جای خودش قرار می‌ده.
+
+مثلاً اگر:
+
+```
+docker inspect -f '{{.State.Pid}}' folan
+```
+
+خروجی بده:
+
+```
+24531
+```
+
+اون وقت این:
+
+```
+kill -9 $(docker inspect -f '{{.State.Pid}}' folan)
+```
+
+عملاً تبدیل میشه به:
+
+```
+kill -9 24531
+```
