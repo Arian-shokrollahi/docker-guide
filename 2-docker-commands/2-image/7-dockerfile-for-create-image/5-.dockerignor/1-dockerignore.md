@@ -69,11 +69,11 @@ docker build -t myapp .
 1- ساخته فایل هایه پوشه
 
 <p align="center">
-	<img src="../../../00-images/dockerignor1.png" alt="" width=1000>
+	<img src="../../../00-images/dockerignore1.png" alt="" width=1000>
 </p>
 
 - ۲ این هم تست درستی اینکه اون فایل ها نادیده یا ignore شدن
 
 <p align="center">
-	<img src="../../../00-images/dockerignor۲.png" alt="" width=1000>
+	<img src="../../../00-images/dockerignore2.png" alt="" width=1000>
 </p>
