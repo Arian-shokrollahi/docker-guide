@@ -152,6 +152,8 @@ final-app.py
 <p align="center">
 	<img src="../../../00-images/multistage1.png" alt="" width=1000>
 </p>
+
+
 - همون طور که میبینید این  به صورت تک استیجی است 
 
 ---
@@ -160,8 +162,12 @@ final-app.py
 <p align="center">
 	<img src="../../../00-images/multistage2.png" alt="" width=1000>
 </p> 
+
+
 - حالا بریم سراغه دابل استیج و اینکه ببینیم چرا میگیم  stage اخری میشه همون image ما و هرچی توسط stage اخر از build contextمیره درون image 
 <p align="center">
 	<img src="../../../00-images/multistage3.png" alt="" width=1000>
 </p>
+
+
 - به عکس نگاه کنید کل اون مسیری که طی میکنه و به استیج دوم هم توجه کنید که چقد اهمیت زیادی دارد و ایمیج از رویه stage اخری درست میشه
